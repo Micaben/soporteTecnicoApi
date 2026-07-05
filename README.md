@@ -48,6 +48,6 @@ DELETE
 /api/solicitudes/{id}
 
 ## Integrantes
-- Saul Paifa
-- Michael Cabrera
 - Josue Pulache
+- Michael Cabrera
+- Joel Vallejos
