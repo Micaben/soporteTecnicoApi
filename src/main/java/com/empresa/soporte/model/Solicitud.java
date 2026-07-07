@@ -16,8 +16,10 @@ public class Solicitud {
     @NotNull(message = "El cliente es obligatorio")
     private Cliente cliente;
 
+    @NotNull(message = "El nombre del técnico es obligatorio")
     private Tecnico tecnico;
 
+    @NotBlank(message = "El estado es obligatorio")
     private String estado;
 
     public Solicitud() {}
@@ -72,5 +74,4 @@ public class Solicitud {
         this.estado = estado;
     }
 
-    // Getters y Setters
 }

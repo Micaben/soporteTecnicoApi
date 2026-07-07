@@ -1,9 +1,15 @@
 package com.empresa.soporte.model;
 
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+
 public class Tecnico {
 
+    @NotNull(message = "El id es obligatorio")
     private Long id;
+    @NotBlank(message = "El nombre es obligatorio")
     private String nombre;
+    @NotBlank(message = "La especialidad es obligatoria")
     private String especialidad;
 
     public Tecnico() {}
@@ -38,5 +44,4 @@ public class Tecnico {
         this.nombre = nombre;
     }
 
-    // Getters y Setters
 }

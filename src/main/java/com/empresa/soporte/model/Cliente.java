@@ -1,9 +1,16 @@
 package com.empresa.soporte.model;
 
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+
 public class Cliente {
 
     private Long id;
+
+    @NotBlank(message = "El nombre del cliente es obligatorio")
     private String nombre;
+
+    @Email(message = "Correo inválido")
     private String correo;
 
     // Constructor vacío
